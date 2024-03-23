@@ -90,7 +90,7 @@ function createGallery(arr) {
 
 const lightbox = new SimpleLightbox('.gallery a', {
   captions: true,
-  captionData: 'alt',
+  captionsData: 'alt',
   captionPosition: 'bottom',
   captionDelay: 250,
 });
