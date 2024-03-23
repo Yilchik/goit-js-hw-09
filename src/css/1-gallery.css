@@ -1,0 +1,15 @@
+@import url('./reset.css');
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 24px;
+  row-gap: 24px;
+  max-width: 1440px;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
