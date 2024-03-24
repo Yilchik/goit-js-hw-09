@@ -27,6 +27,11 @@ function handlerSubmit(event) {
     message: event.target.elements.message.value.trim(),
   };
 
+  if (data.email === '' || data.message === '') {
+    alert('All form fields must be filled in');
+    return;
+  }
+
   console.log(data);
   localStorage.removeItem(localStorageKey);
   registerForm.reset();
