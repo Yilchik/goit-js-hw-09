@@ -1,2 +1,0 @@
-const e=document.querySelector("form"),s="feedback-form-state";e.addEventListener("input",a=>{const t={email:e.email.value,message:e.message.value};localStorage.setItem(s,JSON.stringify(t))});e.addEventListener("submit",o);const l=localStorage.getItem(s);if(l){const{email:a,message:t}=JSON.parse(l);e.email.value=a,e.message.value=t}function o(a){a.preventDefault();const t={email:a.target.elements.email.value,message:a.target.elements.message.value};console.log(t),localStorage.removeItem(s),e.reset()}
-//# sourceMappingURL=2-form-811414bb.js.map
