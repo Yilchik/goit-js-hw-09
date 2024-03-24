@@ -1,7 +1,7 @@
 const registerForm = document.querySelector('form');
 const localStorageKey = 'feedback-form-state';
 
-registerForm.addEventListener('input', evt => {
+registerForm.addEventListener('input', () => {
   const saveInfo = {
     email: registerForm.email.value,
     message: registerForm.message.value,
